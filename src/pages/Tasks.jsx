@@ -39,9 +39,13 @@ export default function Tasks() {
   }, [search, statusFilter]);
 
   const handleDelete = async (id) => {
-    if (!window.confirm("Are you sure you want to delete this task?")) {
-      await deleteTask(id);
-      load();
+    if (window.confirm("Are you sure you want to delete this task?")) {
+      try {
+        await deleteTask(id);
+        load();
+      } catch (err) {
+        console.error("Delete error:", err.response?.data || err.message);
+      }
     }
   };
 
