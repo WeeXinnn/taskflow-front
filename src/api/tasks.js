@@ -1,6 +1,6 @@
 import axios from 'axios'; // Import axios library for making HTTP requests
 
-const BASE = 'https://taskflow-back-h2hl.onrender.com/api'; // Base URL for the API, pointing to the backend server's API endpoint
+const BASE = import.meta.env.VITE_API_URL;
 
 const getHeaders = () => ({
   headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
