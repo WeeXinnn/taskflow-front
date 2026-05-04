@@ -1,16 +1,53 @@
-# React + Vite
+# TaskFlow — Task Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack task management admin dashboard built with React and Node.js.
 
-Currently, two official plugins are available:
+##  Live Demo
+[https://taskflow-front-blush.vercel.app/]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Features
+- JWT Authentication (login & register)
+- Full Task CRUD (create, read, update, delete)
+- Dashboard with charts and statistics
+- Search and filter tasks by status
+- Responsive UI with Tailwind CSS
+- Protected routes (auth required)
 
-## React Compiler
+##  Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+| Tool | Purpose |
+|---|---|
+| React + Vite | UI framework |
+| Tailwind CSS | Styling |
+| Recharts | Charts and data visualization |
+| React Router | Client-side routing |
+| Axios | HTTP requests |
 
-## Expanding the ESLint configuration
+### Backend
+| Tool | Purpose |
+|---|---|
+| Node.js + Express | REST API server |
+| MongoDB + Mongoose | Database |
+| JWT | Authentication tokens |
+| Bcrypt | Password hashing |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Run Locally
+
+### Prerequisites
+- Node.js installed
+- MongoDB Atlas account
+
+### Backend
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
